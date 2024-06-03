@@ -8,8 +8,8 @@
   <!--=============== FAVICON ===============-->
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-   <!-- =============== REMIXICONS =============== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin=""> 
+  <!-- =============== REMIXICONS =============== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -21,7 +21,7 @@
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">
+      <a href="https://linktr.ee/salah.mort" class="nav__logo">
         <span class="nav__logo-circle">S</span>
         <span class="nav__logo-name">Salah Mor.</span>
       </a>
@@ -32,19 +32,19 @@
         <ul class="nav__list">
 
           <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="#home" class="nav__link">Home</a>
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">About Me</a>
+            <a href="#about" class="nav__link">About Me</a>
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">Projects</a>
+            <a href="#projects" class="nav__link">Projects</a>
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">Contact Me</a>
+            <a href="#contact" class="nav__link">Contact Me</a>
           </li>
 
         </ul>
@@ -54,7 +54,10 @@
         </div>
       </div>
 
+
       <div class="nav__buttons">
+        <!-- Theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
         <!-- Toggle button -->
         <div class="nav__toggle" id="nav-toggle">
           <i class="ri-menu-4-line"></i>
@@ -74,7 +77,7 @@
         <div class="home__perfil">
 
           <div class="home__image">
-            <img alt="image" src="assets/img/home-perfil-2.JPG" class="home__img">
+            <img alt="image" src="assets/img/home-perfil-4.jpg" class="home__img">
             <div class="home__shadow"></div>
             <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
             <img src="assets/img/random-lines.svg" alt="" class="home__line">
@@ -98,16 +101,21 @@
 
         <div class="home__info">
           <p class="home__description">
-            <b>Backend Developer</b>, with knowledge in web
+            <b>Backend and Developer </b>, with knowledge in web
             development and design, I offer the best
             projects resulting in quality work.
           </p>
-          <a href="#about" class="home__scroll">
-            <div class="home__scroll-box">
-              <i ctass="ri—arrow-down—s—tine">^</i>
-            </div>
-            <span class="home__scroll-text">Scroll Down</span>
-          </a>
+          <div class="about__cv">
+            <a class="button cv__button" download="assets/cv/finalPro-links-NewsScr.pptx"
+              href="./assets/cv/finalPro-links-NewsScr.pptx">Download CV</a>
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <span class="home__scroll-text">Scroll Down</span>
+            </a>
+          </div>
+
         </div>
 
       </div>
@@ -117,28 +125,51 @@
     <section class="about section" id="about">
       <div class="about__container container grid">
         <h2 class="section__title-1">
-          <span> About Me. </span>
+          About Me.
         </h2>
 
         <div class="about__perfil">
           <div class="about__image">
-            <img src="assets/img/home-perfil-1.JPG" alt="image" class="about__img">
+          
+            <img src="assets/img/home-perfil-2.JPG" alt="image" class="about__img">
+            <img src="assets/img/home-perfil.jpeg" alt="image" class="about__img">
 
             <div class="about__shadow"></div>
 
             <div class="geometric-box"></div>
-            <img src="assets/img/random-lines.svg" alt="" class="about__line">
+            <img src="assets/img/random-lines.svg" alt="image" class="about__line">
             <div class="about__box"></div>
           </div>
         </div>
 
         <div class="about__info">
+
+
+
           <p class="about__description">
-            Passionate about creating <b>Web Pages</b> with
-            <b>UI/UX User Interface</b>, I have years of
-            experience and many clients are happy with
-            the projects carried out.
+            Passionate about creating robust <b>backend solutions </b> and
+            engaging <b>front-end interfaces</b> . With years of experience,
+            I've successfully delivered numerous projects, ensuring
+            client satisfaction through comprehensive development from
+            the server-side to the user interface.
           </p>
+          <!-- <div class="about_boxs">
+            <div class="about_box">
+              <i class='bx bx-award about_box-icon'></i>
+              <h3 class="about_box-title">Experience</h3>
+              <span class="about_box-subtitle">8 Years Working</span>
+            </div>
+            <div class="about_box">
+              <i class='bx bx-briefcase-alt-2 about_box-icon'></i>
+              <h3 class="about_box-title">Completed</h3>
+              <span class="about_box-subtitle">48 + Projects</span>
+            </div>
+            <div class="about_box">
+              <i class='bx bx-support about_box-icon'></i>
+              <h3 class="about_box-title">Support</h3>
+              <span class="about_box-subtitle">Online 24/7</span>
+            </div>
+          </div> -->
           <ul class="about__list">
             <li class="about__item">
               <b>My Skills Are:</b> HTML, CSS, JavaScript,
@@ -159,6 +190,7 @@
           </div>
         </div>
       </div>
+    
     </section>
 
     <!--==================== SERVICES ====================-->
@@ -176,14 +208,15 @@
           <div class="services__content">
             <div class="services__icon">
               <div class="services__box"></div>
-
+              <i class="ri-layout-4-line"></i>
             </div>
             <h2 class="services__title">Web Design </h2>
-
+            <h4 class="projects__subtitle"><b>FrontEnd</b> Developer</h4>
             <p class="services__description">
               Beautiful and elegant designs with
               interfaces that are intuitive, efficient
-              and pleasant to use for the user.
+              and pleasant to use for the user <b> by Uesing" fremwork React-js</b> or <b>basic programming
+                language"</b> .
             </p>
           </div>
 
@@ -194,15 +227,15 @@
           <div class="services__content">
             <div class="services__icon">
               <div class="services__box"></div>
-
+              <i class="ri-code-box-line"></i>
             </div>
             <h2 class="services__title">Development</h2>
-
+            <h4 class="projects__subtitle"><b>BackEnd</b> Developer</h4>
             <p class="services__description">
               Custom web development tailored to your
               specifications, designed to provide a
-              flawless user experience.
-            </p>
+              flawless user experience <b>by Uesing" php</b> or<b> php laravel</b> and <b> node-js"</b>.
+
           </div>
         </articte>
 
@@ -212,18 +245,17 @@
           <div class="services__content">
             <div class="services__icon">
               <div class="services__box"></div>
-
+              <i class="ri-smartphone-line"></i>
             </div>
             <h2 class="services__title">Mobile App</h2>
-
+            <h4 class="projects__subtitle"><b>Native Mobile</b> Developer</h4>
             <p class="services__description">
-              Design and transform website projects
+              Development and transform website projects
               into mobile apps to provide a seamless
-              user experience.
+              user experience <b>by Useing" java or Kotlin "</b>.
             </p>
           </div>
         </articte>
-
       </div>
     </section>
     </section>
@@ -326,15 +358,15 @@
 
         <article class="projects__card">
           <div class="projects__image">
-            <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
+            <img src="assets/img/store1.jpg" alt="image" class="projects__img">
 
-            <a href="#" class="projects__button button">
+            <a href="https://github.com/salah-mort/Store-php-dash" class="projects__button button">
               <i class="ri-arrow-right-up-line"></i>
             </a>
           </div>
           <div class="projects__content">
             <h3 class="projects__subtitle">Website</h3>
-            <h2 class="projects__title">Restaurant Website</h2>
+            <h2 class="projects__title">Store-php-dash</h2>
             <p class="projects__description">
               Project that you carry out in the design
               and structure of the layout, showing the
@@ -343,7 +375,7 @@
           </div>
 
           <div class="projects__buttons">
-            <a href="https://github.com/salah-mort" target="_blank" class="projects__link">
+            <a href="https://github.com/salah-mort/Store-php-dash" target="_blank" class="projects__link">
               <i class="ri-github-line"></i>view
             </a>
 
@@ -358,20 +390,21 @@
 
     <!--==================== CONTACT ====================-->
     <section class="contact section" id="contact">
-      <div class="contact__container grid ">
+      <div class="contact__container grid">
         <div class="contact__data">
           <h2 class="section__title-2">
-            <span>Contact Me .</span>
+            <span>Contact Me.</span>
           </h2>
-          <p class="contact__description—l">
+
+          <p class="contact__description-1">
             I will read all emails. Send me any
             message you want and I'll get back to you.
           </p>
-
-          <p class="contact__description—2">
+          <p class="contact__description-2">
             I need your <b>Name</b> and <b>Email Address</b>, but
             you won't receive anything other than your reply.
           </p>
+
           <div class="geometric-box"></div>
         </div>
 
@@ -380,85 +413,69 @@
             Send Me A Message
           </h2>
 
-
           <form action="" class="contact__form" id="contact-form">
             <div class="contact__group">
-              <div class="contact__box">
-                <input type="text" name="user_name" class="contact__input" id="f-name" required
-                  placeholder="First Name ">
-                <label for="f-name" class="contact__label">First Name </label>
-              </div>
-              <div class="contact__box">
-                <input type="text" name="user_name" class="contact__input" id="l-name" required
-                  placeholder="Last Name ">
-                <label for="l-name" class="contact__label">Last Name </label>
-              </div>
+               <div class="contact__box">
+                  <input type="text" name="user_name" class="contact__input" id="name" placeholder="First Name" required>
+                  <label for="name" class="contact__label">First Name</label>
+               </div>
 
-              <div class="contact__box">
-                <input type="email" name="user_email" class="contact__input" id="email" required
-                  placeholder="Email Address">
-                <label for="email" class="contact__label">Email Address </label>
-              </div>
+               <div class="contact__box">
+                  <input type="email" name="user_email" class="contact__input" id="email" placeholder="Email Address" required>
+                  <label for="email" class="contact__label">Email Address</label>
+               </div>
+            </div>
 
-              <div class="contact__box">
-                <input type="text" name="user_subject" class="contact__input" id="subject" required
-                  placeholder="Email Address">
-                <label for="subject" class="contact__label">Subject </label>
-              </div>
+            <div class="contact__box">
+               <input type="text" name="user_subject" class="contact__input" id="subject" placeholder="Subject" required>
+               <label for="subject" class="contact__label">Subject</label>
+            </div>
+            
+            <div class="contact__box contact__area">
+               <textarea name="user__message" id="message" class="contact__input" placeholder="Message" required></textarea>
+               <label for="message" class="contact__label">Message</label>
+            </div>
 
-              <div class="contact__box contact__area">
-                <textarea name="user_message" id="massage" class="contact__input" required
-                  placeholder="Massage"></textarea>
-                <label for="massage" class="contact__label">Message</label>
-              </div>
+            <p class="contact__message" id="contact-message"></p>
 
-              <button type="submit" class="contact__button button">
-                <i class="ri-sent-plane-line"></i>Send Message
-              </button>
-
-          </form>
+            <button type="submit" class="contact__button button">
+               <i class="ri-send-plane-line"></i> Send Message
+            </button>
+            
+         </form>
         </div>
 
         <div class="contact__social">
+          <img src="assets/img/curved-arrow.svg" alt="contact image" class="contact__social-arrow">
 
-          <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
           <div class="contact__social-data">
             <div>
               <p class="contact__social-description-1">
                 Does not send emails
-
               </p>
-
               <p class="contact__social-description-2">
                 Write me on my social networks
-
               </p>
             </div>
 
             <div class="contact__social-links">
-              <a href="" target=" _blank " class="contact__social-link">
-
-                <i class="ri-linkedin-box-line"></i>
-
+              <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                <i class="ri-facebook-box-line"></i>
               </a>
-
-              <a href="https://www.instagram.com/salah_mort/" target=" _blank " class="contact__social-link">
-
+              <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
                 <i class="ri-instagram-line"></i>
-
               </a>
-
-              <a href="" target=" _blank " class="contact__social-link">
-
-                <i class="ri-facebook-circle-line"></i>
-
+              <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link">
+                <i class="ri-linkedin-box-line"></i>
               </a>
-
             </div>
           </div>
         </div>
+
+      </div>
     </section>
   </main>
+
 
   <!--==================== FOOTER ====================-->
   <footer class="footer">
@@ -476,7 +493,7 @@
       </ul>
       <span class="footer__copy">
         &#169; All Rights Reserved By
-        <a href="#">Salah_pop.</a>
+        <a href="https://linktr.ee/salah.mort">Salah_pop.</a>
       </span>
     </div>
   </footer>
@@ -488,7 +505,8 @@
   <script src=""></script>
 
   <!--=============== EMAIL JS ===============-->
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
