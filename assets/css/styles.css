@@ -619,7 +619,7 @@ body.dark-theme {
 
 .about__shadow {
   width: 150px;
-  height: 560px;
+  height: 420px;
   background-color: var(--body-color);
   top: -2.5rem;
   right: -3.5rem;
